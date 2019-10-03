@@ -1,0 +1,53 @@
+﻿@model TDE.Models.CriterioAvaliacao
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>CriterioAvaliacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idAvaliacao" class="control-label"></label>
+                <input asp-for="idAvaliacao" class="form-control" />
+                <span asp-validation-for="idAvaliacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="criatividade" class="control-label"></label>
+                <input asp-for="criatividade" class="form-control" />
+                <span asp-validation-for="criatividade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="investimentoFinan" class="control-label"></label>
+                <input asp-for="investimentoFinan" class="form-control" />
+                <span asp-validation-for="investimentoFinan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tempoImplantacao" class="control-label"></label>
+                <input asp-for="tempoImplantacao" class="form-control" />
+                <span asp-validation-for="tempoImplantacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="reducaoCustos" class="control-label"></label>
+                <input asp-for="reducaoCustos" class="form-control" />
+                <span asp-validation-for="reducaoCustos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<TDE.Models.CriterioAvaliacao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idAvaliacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.criatividade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.investimentoFinan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tempoImplantacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reducaoCustos)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idAvaliacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.criatividade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.investimentoFinan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tempoImplantacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reducaoCustos)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
