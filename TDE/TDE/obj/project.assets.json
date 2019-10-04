@@ -12628,11 +12628,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marci\\Documents\\4º\\CLOUD\\TDE\\TDE\\TDE.csproj",
+      "projectUniqueName": "C:\\Users\\marci\\Desktop\\TDE\\TDE\\TDE.csproj",
       "projectName": "TDE",
-      "projectPath": "C:\\Users\\marci\\Documents\\4º\\CLOUD\\TDE\\TDE\\TDE.csproj",
+      "projectPath": "C:\\Users\\marci\\Desktop\\TDE\\TDE\\TDE.csproj",
       "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marci\\Documents\\4º\\CLOUD\\TDE\\TDE\\obj\\",
+      "outputPath": "C:\\Users\\marci\\Desktop\\TDE\\TDE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
